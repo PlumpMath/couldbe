@@ -1,0 +1,41 @@
+{
+  "name": "couldbe",
+  "version": "1.0.0",
+  "description": "Maybe-style monoid.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-register",
+    "coverage": "npm run test -- -R html-cov > coverage.html",
+    "coveralls": "npm run test -- -R mocha-lcov-reporter | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mfellner/couldbe.git"
+  },
+  "keywords": [
+    "monoid",
+    "monad",
+    "functional"
+  ],
+  "author": "Maximilian Fellner <max.fellner@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mfellner/couldbe/issues"
+  },
+  "homepage": "https://github.com/mfellner/couldbe#readme",
+  "devDependencies": {
+    "babel-core": "6.3.x",
+    "babel-preset-node5": "10.1.x",
+    "babel-register": "6.3.x",
+    "blanket": "1.2.x",
+    "chai": "3.4.x",
+    "coveralls": "2.11.x",
+    "mocha": "2.3.x",
+    "mocha-lcov-reporter": "1.0.x"
+  },
+  "babel": {
+    "presets": [
+      "node5"
+    ]
+  }
+}
