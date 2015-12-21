@@ -1,0 +1,6 @@
+test/
+.gitignore
+*.yml
+*.html
+*.log
+.DS_Store
